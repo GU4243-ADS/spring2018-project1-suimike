@@ -1,5 +1,5 @@
 ---
-title: "Scary Times"
+title: "Who's the Scariest of Them All?"
 author: "Michael Sheng"
 date: "January 22, 2018"
 output:

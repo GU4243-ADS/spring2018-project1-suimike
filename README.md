@@ -1,27 +1,46 @@
-# Spring2018
-# Project 1:
 
-----
+# Spring 2018
+# Project 1: Spooky Data
 
 
-### [Project Description](doc/)
-This is the first and only *individual* (as opposed to *team*) this semester. 
+## Project Description
 
-Term: Spring 2018
+Objective: To examine the novels of Edgar Allan Poe, HP Lovecraft, and Mary Shelley to compare and contrast their prose.
+Name: Michael Sheng
+UNI: ms4973
 
-+ Project title: [a title]
-+ This project is conducted by [your name]
-+ Project summary: [a short summary] 
+## Who's the Scariest of Them All?
 
-Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is organized as follows.
+1. Basic summary statistics between the authors:
 
-```
-proj/
-├── lib/
-├── data/
-├── doc/
-├── figs/
-└── output/
-```
+![](figs/multiplot.png)
 
-Please see each subfolder for a README file.
+The authors have very similar sentence length and word length distribution, with HP Lovecraft having more words and a slightly longer word length.
+
+2. Sentiment Analysis
+
+We first look at the negativity of each author's prose, measured by an aggregate numerical sentiment value assigned to each word averaged across the entire text.
+
+![](figs/polarity.png)
+
+HP Lovecraft has very negative prose compared to that of the other two.
+
+We then look at each author's distribution of "fearful" words and examine the most common ones.
+
+EAP:
+
+![](figs/EAP.png)
+
+HPL:
+
+![](figs/HPL.png)
+
+MWS:
+
+![](figs/MWS.png)
+
+The words death and fear are common to all three authors, with death being most used by MWS, EAP, and HPL. The word fear itself is used quite often by HPL and MWS but not EAP - do we have to use the word fear to generate fear?
+
+All in all, EAP looks rather weak here, losing both on the negativity indicator and number of common fearful words. 
+
+HPL wins with high negativity, and a fearful word distribution/count not too far from MWS.
